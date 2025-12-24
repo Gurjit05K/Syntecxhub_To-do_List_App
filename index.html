@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple To-Do List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>To-Do List</h1>
+            <p>Organize your tasks and boost your productivity</p>
+        </div>
+        
+        <div class="app-body">
+            <div class="input-section">
+                <input type="text" class="task-input" id="taskInput" placeholder="Enter a new task...">
+                <button class="add-btn" id="addTaskBtn">
+                    <i class="fas fa-plus-circle"></i> Add Task
+                </button>
+            </div>
+            
+            <div class="stats">
+                <div class="total-tasks">Total: <span id="totalCount">0</span></div>
+                <div class="completed-tasks">Completed: <span id="completedCount">0</span></div>
+                <div class="pending-tasks">Pending: <span id="pendingCount">0</span></div>
+            </div>
+            
+            <div class="task-filters">
+                <button class="filter-btn active" data-filter="all">All Tasks</button>
+                <button class="filter-btn" data-filter="pending">Pending</button>
+                <button class="filter-btn" data-filter="completed">Completed</button>
+            </div>
+            
+            <ul class="task-list" id="taskList">
+                <!-- Tasks will be added here dynamically -->
+                <div class="empty-state" id="emptyState">
+                    <i class="fas fa-clipboard-list"></i>
+                    <h3>No tasks yet</h3>
+                    <p>Add a task using the input field above</p>
+                </div>
+            </ul>
+        </div>
+        
+        <div class="footer">
+            <p>Tasks are saved in your browser's local storage</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
