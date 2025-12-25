@@ -15,7 +15,7 @@ A simple, responsive to-do list web application built with HTML, CSS, and JavaSc
 
 ## Live Demo 🌐
 
-https://to-dolistapp-six.vercel.app/
+[View Live Demo](https://to-dolistapp-six.vercel.app)
 
 ## Technologies Used 
 
